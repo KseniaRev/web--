@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>header 1</h1>
+    a: <input type="text" id = "a" value = 1><br>
+    x: <input type="text" id = "x" value = 2><br>
+    <button id = "btn">Send</button>
+    <p id = "result"></p>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",fnc);
+        function fnc(){
+                    let a = parseInt(document.getElementById("a").value);
+        let x = parseInt(document.getElementById("x").value);
+        let res = document.getElementById("result");
+            a *= x;
+            res.innerHTML = a;
+        }
+    </script>
+</body>
+</html>
